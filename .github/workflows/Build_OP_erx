@@ -11,9 +11,9 @@ on:
   release:
     types: [published]
 
-  #push:
-  #  branches: 
-  #    - master
+  push:
+    branches: 
+      - master
 
   #schedule:
   #  - cron: 0 8 * * 5
@@ -59,7 +59,7 @@ jobs:
 
     - name: Clone source code
       env: 
-        REPO_URL: https://github.com/Lienol/openwrt
+        REPO_URL: https://github.com/uiodc/openwrt
         REPO_BRANCH: dev-19.07
       run: git clone $REPO_URL -b $REPO_BRANCH openwrt
 
