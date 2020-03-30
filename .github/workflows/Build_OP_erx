@@ -8,8 +8,8 @@
 name: Build_my_erxwrt
 
 on: 
-  release:
-    types: [published]
+  #release:
+  #  types: [published]
 
   #push:
   #  branches: 
